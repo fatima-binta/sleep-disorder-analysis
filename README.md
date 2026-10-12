@@ -117,3 +117,6 @@ sleep-disorder-analysis/
 - Review duplicate-content records and document the decision.
 - Add clearer denominator and sample-size information to group comparisons.
 - If appropriate, include the no-recorded-disorder group as a comparison baseline.
+  ## Author
+**[Fatima Binta Mohammed]**
+[LinkedIn](https://www.linkedin.com/in/your-name) | [GitHub](https://github.com/fatima-binta)
