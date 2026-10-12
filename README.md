@@ -1,5 +1,5 @@
 # Sleep Disorder Analysis Dashboard
-
+![Sleep Disorder Analysis Dashboard](images/sleep-disorder-dashboard.png)
 ## Executive Summary
 This Power BI project explores sleep-related measures and recorded sleep-disorder categories in a synthetic dataset of 469 records. The dashboard compares records labelled **Insomnia** (97 records; 20.68%) and **Sleep Apnea** (76 records; 16.20%), including average sleep duration, a weighted Sleep Score, sleep quality and stress patterns, BMI-category counts, and average daily steps by occupation.
 
