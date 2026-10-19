@@ -76,14 +76,73 @@ Weights: sleep quality 40%, sleep duration 40%, and inverse stress level 20%. Th
 5. **BMI profile:** 28 of 76 Sleep Apnea records (36.84%) are in the Obese category, compared with 27.72% of all records. This is an exploratory distribution, not evidence that BMI caused a disorder.
 6. **Daily steps:** Average daily steps were approximately 7,225 for Sleep Apnea records, 9,805 for Insomnia records, and 10,608 for records with a blank disorder field. Occupational subgroups are small, so their averages should be interpreted cautiously.
 
-## Recommendations & Next Steps
-- **Improve visual clarity:** Keep the corrected Sleep Apnea card label and the “Sleep Disorder Status %” label on the 36.89% KPI (it equals 173 ÷ 469, the share of records with a nonblank Sleep Disorder value).
-- **Clarify chart titles and legends:** The line chart uses individual ages on the x-axis, so use “Sleep Quality vs. Stress Level by Age” unless actual age bands are created. Add a legend identifying each line.
-- **Fix truncated labels:** Ensure “Female” and “Underweight” are fully visible.
-- **Review duplicate-content rows:** Six pairs of records were reported as identical across all fields except Person ID. Check the source and document whether these are intentional or accidental before removing any.
-- **Document measures:** Keep the DAX definitions and denominator rules with the project. Verify that percentage measures behave as intended when the gender slicer is used.
-- **Improve comparison:** Consider adding the no-recorded-disorder group and sample sizes to relevant visuals, where appropriate.
-- **Avoid clinical claims:** Do not use the dashboard to diagnose, recommend treatment, or claim causation. A real-world study would require suitable real data, ethical approvals where applicable, and qualified clinical/research oversight.
+##  Recommendations
+
+Based on the patterns observed in the dataset, the following recommendations highlight opportunities for further investigation and potential health and wellness interventions.
+
+### 1. Investigate Sleep Apnea and Shorter Sleep Duration
+
+The records labelled Sleep Apnea had an average sleep duration of 6.36 hours, compared with 7.14 hours for records labelled Insomnia and 7.64 hours for records without a recorded disorder classification.
+
+Recommendation: Healthcare professionals and wellness teams could investigate sleep duration among individuals reporting sleep-related concerns and provide appropriate sleep education. Where symptoms suggest a possible sleep disorder, individuals should be encouraged to seek professional assessment.
+
+### 2. Explore Sleep Quality Across Disorder Categories
+
+Average sleep quality was 5.21/10 among records labelled Sleep Apnea, 5.78/10 among records labelled Insomnia, and 6.05/10 among records without a recorded disorder classification.
+
+Recommendation: Further analysis could examine which factors are associated with lower reported sleep quality, including sleep duration, lifestyle characteristics, and other available health indicators. This could help identify areas for further investigation without assuming that disorder classification alone explains differences in sleep quality.
+
+### 3. Investigate BMI Distribution Among Sleep Apnea Records
+
+Obesity represented approximately 36.84% of records labelled Sleep Apnea, compared with 27.72% across the full dataset.
+
+Recommendation: Further analysis could examine the relationship between BMI categories and sleep disorder classifications while accounting for other relevant variables. In a real healthcare setting, this could support broader risk-assessment research and appropriate patient education. However, these descriptive results do not establish that BMI caused or predicted a sleep disorder.
+
+### 4. Examine Differences in Daily Physical Activity
+
+Average daily steps were 7,225 among records labelled Sleep Apnea, compared with 9,805 among records labelled Insomnia and 10,608 among records without a recorded disorder classification.
+
+Recommendation: Investigate whether differences in activity levels remain consistent across age groups, occupations, and other available demographic characteristics. If similar patterns are observed in reliable real-world data, healthcare and wellness teams could explore appropriate, individualized physical-activity initiatives.
+
+These findings should not be interpreted as evidence that lower physical activity causes sleep disorders or that increasing step counts will resolve them.
+
+### 5. Investigate the Missing Sleep Disorder Classifications
+
+Of the 469 records, 296 (63.11%) had no recorded sleep disorder classification, while 173 (36.89%) had a recorded classification.
+
+Recommendation: Improve the completeness and consistency of data collection by reviewing why disorder classifications are missing and establishing appropriate procedures for recording, validating, and maintaining this information.
+
+Missing classifications should remain distinct from confirmed negative classifications. Improving data completeness would make future analyses more reliable and help prevent misleading interpretations.
+
+### 6. Continue Investigating Factors Associated With Sleep Quality
+
+The dashboard explores sleep quality alongside stress levels, age, BMI categories, and daily activity.
+
+Recommendation: Future analysis should investigate these relationships using appropriate statistical methods and, where possible, larger and more representative datasets. This would help determine whether the observed patterns are consistent, identify potential confounding factors, and establish which findings warrant further investigation.
+
+### Overall Recommendation
+
+The findings suggest several areas for further investigation, particularly sleep duration, reported sleep quality, BMI distribution, physical activity, and the completeness of disorder classifications.
+
+The priority should be to validate these patterns using reliable real-world data before using them to inform healthcare decisions, patient interventions, or operational policies.
+
+## 🚀 Next Steps
+
+1. Improve Data Quality: Investigate the 296 records with missing sleep disorder classifications and review the six pairs of identical-content records to determine whether they represent legitimate observations or unintended duplicates.
+
+2. Expand the Analysis: Explore relationships between sleep duration, sleep quality, stress levels, BMI categories, and physical activity to identify additional patterns that warrant investigation.
+
+3. Strengthen Validation: Continue cross-checking Power BI measures and DAX calculations against the source dataset to maintain consistency and accuracy across dashboard visuals.
+
+4. Enhance the Sleep Score: Document the custom Sleep Score calculation and assess its limitations to ensure it is interpreted appropriately as an exploratory metric rather than a clinically validated measure.
+
+5. Explore Further Analytical Methods: Apply additional statistical techniques to investigate whether the observed differences persist across relevant demographic groups and to identify potential confounding factors.
+
+6. Apply Findings to Real-World Data: Where appropriate, explore validated and ethically sourced healthcare data to determine whether the patterns identified in this synthetic dataset are also observed in real-world settings.
+
+### Expected Outcome
+
+These next steps would strengthen the reliability of the analysis, improve the interpretation of the findings, and provide opportunities to develop more advanced healthcare analytics skills.
 
 ## Dashboard Preview
 `![Sleep Disorder Analysis Dashboard](images/sleep-disorder-dashboard.png)`
